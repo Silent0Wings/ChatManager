@@ -1,7 +1,7 @@
 # ChatManager
 
 ## Overview
-Project Report .[here](https://github.com/Silent0Wings/ChatManager/blob/f6a85b6ad62ed80b9f4e67fc1c055a2dd66efdc4/Github.pdf).
+Project Report .[here](https://github.com/Silent0Wings/ChatManager/blob/994e024f8392feb68ff29fa1d53fb9b8367405db/Github.pdf).
 
 **ChatManager** is a Java-based application designed as a chat server and client system. The project includes components for managing client connections, sending and receiving messages, and ensuring consistent communication across the network.
 
