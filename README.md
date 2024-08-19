@@ -1,30 +1,28 @@
-# ClientDataManager
+# ChatManager
 
 ## Overview
-Project Report .[here](https://github.com/Silent0Wings/ClientDataManager/blob/f6a85b6ad62ed80b9f4e67fc1c055a2dd66efdc4/Github.pdf).
+Project Report .[here](https://github.com/Silent0Wings/ChatManager/blob/f6a85b6ad62ed80b9f4e67fc1c055a2dd66efdc4/Github.pdf).
 
-**ClientDataManager** is a Java-based application designed to manage client profiles efficiently. The project includes components for creating, storing, and retrieving client information, parsing strings for specific data extraction, and defining standardized interfaces for client operations.
+**ChatManager** is a Java-based application designed as a chat server and client system. The project includes components for managing client connections, sending and receiving messages, and ensuring consistent communication across the network.
 
 ## Features
-- **Client Profile Management**: Create, update, and manage detailed client profiles.
-- **String Parsing**: Extract and manipulate client-related data from strings.
-- **Standardized Interfaces**: Ensure consistency in client operations through the implementation of interfaces.
+- **Chat Server**: Manage multiple client connections and route messages.
+- **Chat Client**: Send and receive messages through the server.
+- **Message Handling**: Efficient message routing between clients.
 
 ## Project Structure
 
-- **Client_Profile.java**: Handles the management of client profiles, including storing and retrieving personal information.
-- **String_Parse.java**: Provides methods for parsing strings, validating, and extracting specific information.
-- **Client.java**: Represents a client entity with attributes and methods for interacting with client data.
-- **Client_Interface.java**: Defines the required methods for any client-related class, ensuring standardized operations.
+- **Server.java**: Handles incoming client connections and message routing.
+- **Client.java**: Manages client-server communication, including sending and receiving messages.
+- **MessageHandler.java**: Ensures that messages are correctly delivered to the intended recipients.
 
 ## How to Use
-1. **Client Profile Management**: Use the `Client_Profile` class to manage client information. You can create, update, and retrieve client profiles through this class.
-2. **String Parsing**: Utilize the `String_Parse` class to handle any string-related operations, such as validation or data extraction from strings.
-3. **Client Class**: Implement client-specific behaviors and attributes through the `Client` class, which interacts with other components for data management.
-4. **Client Interface**: Ensure any new client-related class implements the `Client_Interface` to maintain consistency in the application's client operations.
+1. **Chat Server**: Use the `Server` class to manage connections and route messages between clients.
+2. **Chat Client**: Implement the `Client` class to connect to the server and manage message exchanges.
+3. **Message Handling**: Utilize the `MessageHandler` class for efficient and accurate message delivery.
 
 ## Dependencies
 - Java Development Kit (JDK) 8 or higher.
 
 ## Contributing
-Feel free to fork the repository and submit pull requests. Contributions are welcome to enhance the functionality and efficiency of the ClientDataManager project.
+Feel free to fork the repository and submit pull requests. Contributions are welcome to enhance the functionality and efficiency of the ChatManager project.
